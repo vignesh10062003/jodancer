@@ -196,4 +196,23 @@ footer {
 .footer a:hover {
     text-decoration: underline;
 }
+/* Responsive layout for tablets and laptops */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        padding: 0 20px;
+    }
 
+    .banner-section {
+        padding: 80px 0;
+        margin-top: 15vh;
+    }
+
+    .banner-section h1 {
+        font-size: 40px;
+    }
+
+    .banner-section h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
