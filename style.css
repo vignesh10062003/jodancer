@@ -1,5 +1,5 @@
 /*****COMMON CSS SECTION*****/
-  * {
+* {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -9,8 +9,8 @@
    */
 	  
 }
-html, body 
-	{
+/* Default styles */
+html, body {
 	font-size: 14px;
 	font-weight: 400;
 	background: #000000;
@@ -28,6 +28,37 @@ html, body
 .width-66 {
 	width: 66%;
 	float: left;
+}
+
+/* Responsive styles for tablets */
+@media only screen and (max-width: 1024px) {
+	.container {
+		width: 100%;
+		padding: 0 20px; /* Adjust as needed */
+	}
+}
+
+/* Responsive styles for mobile phones */
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 0 10px; /* Adjust as needed */
+	}
+	.width-33, .width-66 {
+		width: 100%;
+		float: none;
+	}
+}
+
+/* Responsive styles for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+	html, body {
+		font-size: 12px; /* Adjust as needed */
+	}
+	.container {
+		width: 100%;
+		padding: 0 5px; /* Adjust as needed */
+	}
 }
 
 
