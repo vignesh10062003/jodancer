@@ -63,6 +63,7 @@ html, body {
 
 
 /*****MENU SECTION*****/
+/* Default styles */
 .main-panel {
 	width: 100%;
 	float: left;
@@ -79,6 +80,32 @@ html, body {
 .span-col {
 	color: #ffbf35;
 }
+
+/* Responsive styles for tablets */
+@media only screen and (max-width: 1024px) {
+	.logo {
+		font-size: 30px; /* Adjust as needed */
+	}
+}
+
+/* Responsive styles for mobile phones */
+@media only screen and (max-width: 768px) {
+	.logo {
+		font-size: 24px; /* Adjust as needed */
+	}
+}
+
+/* Responsive styles for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+	.logo {
+		font-size: 20px; /* Adjust as needed */
+	}
+	.main-panel {
+		padding-top: 10px; /* Adjust as needed */
+		padding-bottom: 30px; /* Adjust as needed */
+	}
+}
+
 /*.span-col:hover{
 	color:#ffbf35;
 	border-radius: 20%;
@@ -87,6 +114,7 @@ html, body {
 	border-radius: 20%;
 }*/
 
+/* Default styles */
 nav {
 	float: right;
 }
@@ -98,13 +126,38 @@ nav a {
 	margin-left: 10px;
 	padding: 10px;
 	color: white;
-	border: #e7e7e7;
-	border-width:80% ;
+	border: 1px solid transparent; /* Change border width to 1px */
+}
+
+/* Responsive styles for tablets */
+@media only screen and (max-width: 1024px) {
+	nav {
+		float: none; /* Change float to none */
+	}
+}
+
+/* Responsive styles for mobile phones */
+@media only screen and (max-width: 768px) {
+	nav a {
+		font-size: 14px; /* Adjust font size as needed */
+		margin-left: 5px; /* Adjust margin as needed */
+		padding: 8px; /* Adjust padding as needed */
+	}
+}
+
+/* Responsive styles for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+	nav a {
+		font-size: 12px; /* Adjust font size as needed */
+		margin-left: 3px; /* Adjust margin as needed */
+		padding: 5px; /* Adjust padding as needed */
+	}
 }
 
 
 /*****Main BANNER*****/
 
+/* Default styles */
 .width-50 {
 	float: left;
 	width: 50%;
@@ -156,26 +209,118 @@ nav a {
 	width: 60px;
 	line-height:50px;
 }
+
+/* Responsive styles for tablets */
+@media only screen and (max-width: 1024px) {
+	.width-50 {
+		width: 100%; /* Change width to 100% for full width */
+		border-radius: 0; /* Remove border radius */
+	}
+}
+
+/* Responsive styles for mobile phones */
+@media only screen and (max-width: 768px) {
+	.banner-section {
+		margin-top: 15vh; /* Adjust margin-top as needed */
+	}
+	.banner-section h1 {
+		font-size: 40px; /* Adjust font size as needed */
+	}
+	.banner-section h2 {
+		font-size: 18px; /* Adjust font size as needed */
+		line-height: 22px; /* Adjust line height as needed */
+	}
+	.banner-section a {
+		font-size: 16px; /* Adjust font size as needed */
+		margin-top: 15px; /* Adjust margin-top as needed */
+		height: 40px; /* Adjust height as needed */
+		width: 40px; /* Adjust width as needed */
+		line-height: 40px; /* Adjust line height as needed */
+	}
+	.banner-section a i:hover {
+		font-size: 16px; /* Adjust font size as needed */
+		margin-top: 15px; /* Adjust margin-top as needed */
+		height: 40px; /* Adjust height as needed */
+		width: 50px; /* Adjust width as needed */
+		line-height: 40px; /* Adjust line height as needed */
+	}
+}
+
+/* Responsive styles for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+	.banner-section h1 {
+		font-size: 36px; /* Adjust font size as needed */
+	}
+	.banner-section h2 {
+		font-size: 16px; /* Adjust font size as needed */
+		line-height: 20px; /* Adjust line height as needed */
+	}
+	.banner-section a {
+		font-size: 14px; /* Adjust font size as needed */
+		margin-top: 10px; /* Adjust margin-top as needed */
+		height: 30px; /* Adjust height as needed */
+		width: 30px; /* Adjust width as needed */
+		line-height: 30px; /* Adjust line height as needed */
+	}
+	.banner-section a i:hover {
+		font-size: 14px; /* Adjust font size as needed */
+		margin-top: 10px; /* Adjust margin-top as needed */
+		height: 30px; /* Adjust height as needed */
+		width: 40px; /* Adjust width as needed */
+		line-height: 30px; /* Adjust line height as needed */
+	}
+}
+
 /*****Main BANNER IMAGE*****/
+/* Default styles */
 .main-panel img {
 	margin-top: 10%;
 	width: 100%;
 	margin-left: 10%;
 }
 
+/* Responsive styles for tablets */
+@media only screen and (max-width: 1024px) {
+	.main-panel img {
+		margin-top: 8%; /* Adjust margin-top as needed */
+		margin-left: 5%; /* Adjust margin-left as needed */
+	}
+}
+
+/* Responsive styles for mobile phones */
+@media only screen and (max-width: 768px) {
+	.main-panel img {
+		margin-top: 6%; /* Adjust margin-top as needed */
+		margin-left: 2%; /* Adjust margin-left as needed */
+	}
+}
+
+/* Responsive styles for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+	.main-panel img {
+		margin-top: 4%; /* Adjust margin-top as needed */
+		margin-left: 0; /* Remove left margin */
+	}
+}
+
+
 /*ABOUT US SECTION*/
+/* Default styles */
 .main-section {
 	width: 100%;
 	float: left;
 	padding: 110px 0px 110px 0px;
 }
+
 .width-100 {
 	width: 100%;
 	float: left;
 }
+
 .mt-20 {
 	margin-top: 20px;
 }
+
 .heading-text {
 	width: 100%;
 	float: left;
@@ -184,25 +329,30 @@ nav a {
 	margin-bottom: 50px;
 	color: #ffbf35;
 }
+
 .about-img {
 	width: 100%;
 	padding: 0px 50px;
 	margin-top: 20px;
 	border-radius: 50%;
 }
+
 .about-us {
 	width: 100%;
 	float: left;
 	padding: 20px;
 }
+
 .about-us p {
 	font-size: 16px;
 	margin-top: 15px;
 	line-height: 27px;
 }
+
 table {
 	width: 100%;
 }
+
 table th,
 table td {
 	font-size: 16px;
@@ -210,8 +360,73 @@ table td {
 	padding: 5px 0px;
 }
 
+/* Responsive styles for tablets */
+@media only screen and (max-width: 1024px) {
+	.main-section {
+		padding: 80px 0; /* Adjust padding as needed */
+	}
+
+	.heading-text {
+		font-size: 30px; /* Adjust font size as needed */
+		margin-bottom: 30px; /* Adjust margin as needed */
+	}
+
+	.about-img {
+		padding: 0px 30px; /* Adjust padding as needed */
+	}
+
+	.about-us p {
+		font-size: 14px; /* Adjust font size as needed */
+		line-height: 24px; /* Adjust line height as needed */
+	}
+}
+
+/* Responsive styles for mobile phones */
+@media only screen and (max-width: 768px) {
+	.main-section {
+		padding: 60px 0; /* Adjust padding as needed */
+	}
+
+	.heading-text {
+		font-size: 25px; /* Adjust font size as needed */
+		margin-bottom: 20px; /* Adjust margin as needed */
+	}
+
+	.about-img {
+		padding: 0px 20px; /* Adjust padding as needed */
+	}
+
+	.about-us p {
+		font-size: 12px; /* Adjust font size as needed */
+		line-height: 22px; /* Adjust line height as needed */
+	}
+}
+
+/* Responsive styles for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+	.main-section {
+		padding: 40px 0; /* Adjust padding as needed */
+	}
+
+	.heading-text {
+		font-size: 20px; /* Adjust font size as needed */
+		margin-bottom: 10px; /* Adjust margin as needed */
+	}
+
+	.about-img {
+		padding: 0px 10px; /* Adjust padding as needed */
+	}
+
+	.about-us p {
+		font-size: 10px; /* Adjust font size as needed */
+		line-height: 20px; /* Adjust line height as needed */
+	}
+}
+
+
 
 /*****SKILL SECTION*****/
+/* Default styles */
 .skill {
 	margin-top: 30px;
 	font-size: 17px;
@@ -235,8 +450,45 @@ table td {
 	float: left;
 }
 
+/* Responsive styles for tablets */
+@media only screen and (max-width: 1024px) {
+	.skill {
+		font-size: 15px; /* Adjust font size as needed */
+	}
+
+	.skill div span {
+		height: 4px; /* Adjust height as needed */
+	}
+}
+
+/* Responsive styles for mobile phones */
+@media only screen and (max-width: 768px) {
+	.skill {
+		margin-top: 20px; /* Adjust margin-top as needed */
+		font-size: 13px; /* Adjust font size as needed */
+	}
+
+	.skill div span {
+		height: 3px; /* Adjust height as needed */
+	}
+}
+
+/* Responsive styles for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+	.skill {
+		margin-top: 10px; /* Adjust margin-top as needed */
+		font-size: 11px; /* Adjust font size as needed */
+	}
+
+	.skill div span {
+		height: 2px; /* Adjust height as needed */
+	}
+}
+
+
 
 /*SERVICE SECTION*/
+/* Default styles */
 .service-list {
 	padding: 40px;
 	margin-top: 35px;
@@ -268,51 +520,154 @@ table td {
     border-radius: 10%;
 	border-color: #ffbf35;
 	background-color: #fff;
-
-	
 }
+
 .service-list button a:hover{
 	background: #fff;
 	border-color: red;
 }
 
+/* Responsive styles for tablets */
+@media only screen and (max-width: 1024px) {
+	.service-list {
+		padding: 30px;
+		margin-top: 25px;
+		border-radius: 10px;
+		width: 90%;
+	}
+
+	.service-list i {
+		font-size: 40px;
+		width: 60px;
+	}
+
+	.service-list h3 {
+		font-size: 24px;
+		margin-top: 6px;
+		margin-bottom: 12px;
+	}
+
+	.service-list p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+
+/* Responsive styles for mobile phones */
+@media only screen and (max-width: 768px) {
+	.service-list {
+		padding: 20px;
+		margin-top: 20px;
+		border-radius: 8px;
+		width: 85%;
+	}
+
+	.service-list i {
+		font-size: 30px;
+		width: 50px;
+	}
+
+	.service-list h3 {
+		font-size: 20px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	.service-list p {
+		font-size: 13px;
+		line-height: 20px;
+	}
+}
+
+/* Responsive styles for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+	.service-list {
+		padding: 15px;
+		margin-top: 15px;
+		border-radius: 5px;
+		width: 80%;
+	}
+
+	.service-list i {
+		font-size: 20px;
+		width: 40px;
+	}
+
+	.service-list h3 {
+		font-size: 18px;
+		margin-top: 4px;
+		margin-bottom: 8px;
+	}
+
+	.service-list p {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
 
 /*PORTFOLIO SECTION*/
+/* Default styles */
 .gallery {
 	width: 100%;
 	float: left;
 	margin-top: 30px;
 	border-radius: 5%;
 }
+
 .gallery img {
 	height: auto;
 	width: 95%;
 	margin-bottom: 20px;
 }
-.gallery img :hover{
+
+.gallery img:hover {
 	opacity: 0.7;
 }
-form center{
+
+form center {
 	opacity: 0.5;
 }
-form center lable{
-	color:  #ffbf35;
+
+form center lable {
+	color: #ffbf35;
 }
+
 footer {
-	color:#e7e7e7
+	color: #e7e7e7;
 }
 
-
-.footer center{
+.footer center {
 	border-color: #f5a511;
 	border: #ee9208d3;
-	color:#ff9204;
+	color: #ff9204;
 	opacity: 0.8;
 	margin: 0px;
 	padding: 0%;
 	width: fit-content;
-   
 }
+
+/* Responsive styles for tablets */
+@media only screen and (max-width: 1024px) {
+	.gallery img {
+		width: 90%;
+	}
+}
+
+/* Responsive styles for mobile phones */
+@media only screen and (max-width: 768px) {
+	.gallery img {
+		width: 85%;
+	}
+}
+
+/* Responsive styles for smaller mobile phones */
+@media only screen and (max-width: 480px) {
+	.gallery img {
+		width: 80%;
+	}
+}
+
 /* Responsive layout for tablets and laptops */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
     .container {
